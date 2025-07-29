@@ -1,0 +1,30 @@
+<div class="container py-4">
+  <!-- Header -->
+  <div class="d-flex flex-column justify-content-center align-items-center min-vh-100 text-center">
+  <div class="d-flex flex-column align-items-center gap-4">
+    <!-- Logo & Heading -->
+    <div class="d-flex flex-column align-items-center">
+      <img [src]="'assets/images/logo.png'" alt="Institute Logo" class="logo-img mb-3" />
+      <h3 class="fw-bold text-primary">Welcome back, Admin!</h3>
+    </div>
+
+    <!-- Action Buttons -->
+    <div>
+      <button class="btn btn-outline-secondary me-2">Edit Institute Details</button>
+      <button class="btn btn-custom">+ Create Course</button>
+    </div>
+  </div>
+</div>
+
+  <!-- Courses List -->
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+    <div class="col" *ngFor="let course of courses">
+      <div class="card course-card p-3">
+        <h5 class="fw-semibold text-primary">{{ course.title }}</h5>
+        <p class="mb-1 text-muted">Course ID: #{{ course.id }}</p>
+        <p class="text-secondary">Enrolled Students: {{ course.enrolled }}</p>
+        <button class="btn btn-sm btn-outline-primary">Manage</button>
+      </div>
+    </div>
+  </div>
+</div>

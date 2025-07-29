@@ -1,0 +1,83 @@
+<style>
+  body {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  .login-card {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 500px;
+    width: 100%;
+  }
+
+  .form-label {
+    font-weight: 600;
+    color: #444;
+  }
+
+  .form-control:focus {
+    border-color: #2575fc;
+    box-shadow: 0 0 0 0.2rem rgba(37, 117, 252, 0.25);
+  }
+
+  .btn-primary {
+    background: linear-gradient(to right, #2575fc, #6a11cb);
+    border: none;
+    transition: all 0.3s ease;
+  }
+
+  .btn-primary:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(37, 117, 252, 0.4);
+  }
+
+  .forgot-link {
+    display: block;
+    margin-top: 10px;
+    text-align: right;
+    font-size: 0.9rem;
+    color: #2575fc;
+    text-decoration: none;
+  }
+
+  .forgot-link:hover {
+    text-decoration: underline;
+  }
+</style>
+
+<div class="container py-5 d-flex justify-content-center align-items-center min-vh-100">
+  <div class="login-card">
+    <h2 class="text-center mb-4 text-primary fw-bold">Login to Your Account</h2>
+
+    <form>
+      <!-- Email -->
+      <div class="mb-3">
+        <label for="loginEmail" class="form-label">Email</label>
+        <input type="email" class="form-control" id="loginEmail" placeholder="Enter your email" required>
+      </div>
+
+      <!-- Password -->
+      <div class="mb-3">
+        <label for="loginPassword" class="form-label">Password</label>
+        <input type="password" class="form-control" id="loginPassword" placeholder="Enter your password" required>
+      </div>
+
+      <!-- Forgot Password -->
+      <a href="#" class="forgot-link">Forgot Password?</a>
+
+      <!-- Submit -->
+      <div class="d-grid mt-4">
+        <button type="submit" class="btn btn-primary btn-lg">Login</button>
+      </div>
+    </form>
+    <!-- Signup Redirect -->
+    <p class="text-center mt-3">
+    Don't have an account?
+    <a href="signup.html" class="text-primary fw-semibold" style="text-decoration: none;">Sign up here</a>
+    </p>
+
+  </div>
+</div>

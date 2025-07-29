@@ -8,10 +8,11 @@ import { Contactus } from "./pages/contactus/contactus";
 import { Signup } from "./pages/signup/signup";
 import { Login } from "./auth/login/login";
 import { Admindashboard } from "./dashboard/admindashboard/admindashboard";
+import { CreateCourse } from "./pages/create-course/create-course";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Header, Verifypage, Footer, Ourservices, Contactus, Signup, Login, Admindashboard],
+  imports: [RouterOutlet, Header, Verifypage, Footer, Ourservices, Contactus, Signup, Login, Admindashboard, CreateCourse],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

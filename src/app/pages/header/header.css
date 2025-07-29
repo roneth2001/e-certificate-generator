@@ -1,0 +1,43 @@
+.navbar-nav .nav-link:hover {
+  color: #ffea00 !important; /* bright yellow on hover */
+}
+
+.navbar-nav .nav-link.active {
+  color: #ffea00 !important; /* highlight active */
+}
+
+.nav-underline {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #ffea00;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover .nav-underline,
+.nav-link.active .nav-underline {
+  width: 100%;
+}
+
+.btn-light:hover {
+  background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%) !important;
+  color: #fff !important;
+  box-shadow: 0 6px 12px rgba(106, 17, 203, 0.7);
+}
+/* Cursor for all links in navbar */
+.navbar-nav .nav-link {
+  cursor: pointer; /* hand icon for links */
+}
+
+/* Cursor for Sign In button */
+.navbar-nav .btn {
+  cursor: grab; /* looks like a grabbing hand */
+}
+
+/* Optionally, change cursor on hover */
+.navbar-nav .btn:hover {
+  cursor: pointer;
+}

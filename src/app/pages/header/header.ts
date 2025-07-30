@@ -1,21 +1,14 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
-import { Login } from '../../auth/login/login';
+import { RouterLink } from '@angular/router';
+import { Ourservices } from '../ourservices/ourservices';
 
 @Component({
   selector: 'app-header',
-  imports: [Login],
+  imports: [RouterLink,Ourservices],
   templateUrl: './header.html',
   styleUrl: './header.css'
 })
 export class Header {
-
-  constructor(private router: Router) {}
-
-  goToLogin() {
-    console.log('Navigating to login page...');
-    this.router.navigate(['login']);
-  }
 
 }
 

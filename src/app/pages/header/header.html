@@ -16,20 +16,26 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ms-auto align-items-center">
       <li class="nav-item mx-3">
-        <a class="nav-link text-white fw-semibold" routerLink="/d" routerLinkActive="active" style="position: relative; transition: color 0.3s;">
+        <a class="nav-link text-white fw-semibold"  routerLink="" routerLinkActive="active" style="position: relative; transition: color 0.3s;">
           Verification
           <span class="nav-underline"></span>
         </a>
       </li>
       <li class="nav-item mx-3">
-        <a class="nav-link text-white fw-semibold" routerLink="/course-list" routerLinkActive="active" style="position: relative; transition: color 0.3s;">
+        <a class="nav-link text-white fw-semibold" routerLink="/ourservices" routerLinkActive="active" style="position: relative; transition: color 0.3s;">
+          Our Serices
+          <span class="nav-underline"></span>
+        </a>
+      </li>
+      <li class="nav-item mx-3">
+        <a class="nav-link text-white fw-semibold" routerLink="/contactus" routerLinkActive="active" style="position: relative; transition: color 0.3s;">
           Contact Us
           <span class="nav-underline"></span>
         </a>
       </li>
       <li class="nav-item mx-3">
         <a routerLink="/login">
-          <button (click)="goToLogin()" class="btn btn-light btn-sm fw-semibold px-4 py-2" style="border-radius: 30px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); transition: background-color 0.3s, color 0.3s;">
+          <button class="btn btn-light btn-sm fw-semibold px-4 py-2" style="border-radius: 30px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); transition: background-color 0.3s, color 0.3s;" routerLink="/login">
             Sign In
           </button>
         </a>

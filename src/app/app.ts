@@ -1,5 +1,5 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule, RouterOutlet } from '@angular/router';
 import { Header } from "./pages/header/header";
 import { Verifypage } from "./pages/verifypage/verifypage";
 import { Footer } from "./pages/footer/footer";
@@ -12,7 +12,7 @@ import { CreateCourse } from "./pages/create-course/create-course";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Header, Verifypage, Footer, Ourservices, Contactus, Signup, Login, Admindashboard, CreateCourse],
+  imports: [RouterOutlet, Header, Verifypage, Footer,RouterModule],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
